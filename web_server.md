@@ -20,3 +20,5 @@ A **static web server**, or stack, consists of a computer (hardware) with an HTT
 A **dynamic web server** consists of a static web server plus extra software, most commonly an _application server_ and a _database_. We call it "dynamic" because the application server updates the hosted files before sending content to your browser via the HTTP server.
 
 For example, to produce the final webpages you see in the browser, the application server might fill an HTML template with content from a database. Sites like MDN or Wikipedia have thousands of webpages. Typically, these kinds of sites are composed of only a few HTML templates and a giant database, rather than thousands of static HTML documents. This setup makes it easier to maintain and deliver the content.
+
+Apart from filling out the template nowadays, there is another way to serve the webpage. In this we have two different webservers one which contains all the frontends (HTML, CSS, assets and JS) and another has backend APIs. The frontend hits the backend API to fetch dynamic data and the populate it into the webpage.
